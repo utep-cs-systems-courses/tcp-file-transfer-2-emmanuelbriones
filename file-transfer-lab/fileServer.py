@@ -57,7 +57,7 @@ def fileServer():
             fileName = fileName.decode()
             writeFile(connection, address, fileName, contents)
 
-            connection.sendall(str(1).encode()) # success
+            connection.sendAll(str(1).encode()) # success
             sys.exit(0)
 
 def writeFile(connection, address, fileName, contents):
