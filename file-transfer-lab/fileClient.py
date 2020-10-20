@@ -52,7 +52,7 @@ def fileClient():
                     print("File %s is blank" % fileName)
                     continue
                 
-                framedSend(listenSocket, fileName, data, debug)
+                framedSend(listenSocket, data, debug)
                 statusNumber = int(listenSocket.recv(1024).decode()) # checks if server received the file
 
                 if not statusNumber:
