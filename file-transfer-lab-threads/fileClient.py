@@ -7,7 +7,7 @@ sys.path.append("../lib") # for params
 import params
 from framedSock import framedSock
 
-PATH = "Send/"
+PATH = "Files/"
 
 def fileClient():
     switchesVarDefaults = (

@@ -8,7 +8,7 @@ sys.path.append("../framed-echo") # for framedSock
 import params
 from framedSock import framedSend, framedReceive
 
-PATH = "Send/"
+PATH = "Files/"
 
 def fileClient():
     switchesVarDefaults = (
