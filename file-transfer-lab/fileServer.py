@@ -50,14 +50,14 @@ def fileServer():
                 fileName, contents = framedReceive(connection, debug)
             except:
                 print("Error: File transfer was not successful!")
-                connection.sendAll(str(0).encode())
+                connection.sendall(str(0).encode())
                 sys.exit(1)
             
             # save files 
             fileName = fileName.decode()
             writeFile(connection, address, fileName, contents)
 
-            connection.sendAll(str(1).encode()) # success
+            connection.sendall(str(1).encode()) # success
             sys.exit(0)
 
 def writeFile(connection, address, fileName, contents):
